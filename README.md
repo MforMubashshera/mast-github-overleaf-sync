@@ -1,53 +1,32 @@
 # Study plan 
 
-## Artificial Intelligence 
+[outline]: <https://www.uu.se/en/study/outline?query=3130> "Outline MAST Valid from HT2023"
 
-### HT21 
+[1DL010]: <https://www.uu.se/en/study/course?query=1DL010> 
 
-* Part 01: Deterministic AI 
+[1DT098]: <https://www.uu.se/en/study/course?query=1DT098> 
 
-    * [ ] Module 01: Search basics 
+[1MS041]: <https://www.uu.se/en/study/course?query=1MS041> 
 
-    * [ ] Module 02: Heuristic and competitive search
+[1RT747]: <https://www.uu.se/en/study/course?query=1RT747> 
 
-    * [ ] Module 03: Planning and scheduling
+[1TD069]: <https://www.uu.se/en/study/course?query=1TD069> 
 
-* Part 02: Stochastic AI
+[1TD075]: <https://www.uu.se/en/study/course?query=1TD075> 
 
-    * [ ] Module 04: Statistical learning basics
+[1TD184]: <https://www.uu.se/en/study/course?query=1TD184> 
 
-    * [ ] Module 05: Markov models 
+[1DL505]: <https://www.uu.se/en/study/course?query=1DL505> 
 
-    * [ ] Module 06: Bayesian networks 
+Master's Programme in Data Science with a specialization in Machine Learning and Statistics
 
-* Part 03: Deep Learning
-
-    * [ ] Module 07: Deep neural networks 
-
-    * [ ] Module 08: Image analysis with convolutional neural networks
-
-### VT22 
-
-
-*** 
-## Security and Privacy
-
-### HT21 Syllabus
-
-* Part 01: Cryptographic approaches to security
-
-    * [ ] Module 01: Multiparty computation
-
-    * [ ] Module 02: Homomorphic encryption
-
-* Part 02: Probabilistic approaches to privacy
-
-    * [ ] Module 03: Anonymity, Psuedonyms
-
-    * [ ] Module 04: Differential privacy
-
-* Part 03: Secure Machine Learning 
-
-    * [ ] Module 05: Secure ML
-
-***
+| Course | Remaining::Total Credits | Task |
+| --- | --- | --- |
+| [1DL010] Artificial Intelligence | 3::7.5 | written exam |
+| [1DT098] Security and Privacy | 3.5::7.5 | written report |
+| [1MS041] Introduction to Data Science | 7.5::10 | written exam |
+| [1RT747] Reinforcement Learning | 3.5::7.5 | assignments `\|` oral exam |
+| [1TD069] Data Engineering I | 6.5::7.5 | assignments `\|` project |
+| [1TD075] Data Engineering II | 7.5::7.5 | assignments `\|` mini project `\|` seminar |
+| [1TD184] Optimization | 3::5 | written exam |
+| [1DL505] Project in Data Science | 5::7.5 | written report |
