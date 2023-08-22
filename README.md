@@ -2,14 +2,6 @@
 
 ## Artificial Intelligence 
 
-### VT21 
-
-* Part 01: History and philosophical debates around AI 
-
-* Part 02: Classical AI 
-
-* Part 03: Machine Learning 
-
 ### HT21 
 
 * Part 01: Deterministic AI 
