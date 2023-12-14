@@ -5,6 +5,11 @@
 \renewcommand{\rmdefault}{cmr}
 \renewcommand{\sfdefault}{cmss}
 
+% colors
+\usepackage{xcolor}
+\definecolor{PageColor}{HTML}{D3D3D3}
+\definecolor{FontColor}{HTML}{757575}
+
 % set page geometry
 \usepackage[verbose=true,a4paper]{geometry}
 \AtBeginDocument{
@@ -21,9 +26,18 @@
 \usepackage{lastpage}
 \usepackage[myheadings]{fancyhdr}
 \pagestyle{fancy}
+
 % clear existing header/footer entries
 \fancyhf{} 
 \fancyhead[R]{\emph{Page \thepage::\pageref{LastPage}}}
+
+% https://www.overleaf.com/learn/latex/Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    urlcolor=teal
+}
 
 % line number
 \RequirePackage{lineno}
