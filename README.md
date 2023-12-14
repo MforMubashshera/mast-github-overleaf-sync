@@ -1,32 +1,22 @@
-# Study plan 
+[cc-by-nc-sa]: <http://creativecommons.org/licenses/by-nc-sa/4.0/>
 
-[outline]: <https://www.uu.se/en/study/outline?query=3130> "Outline MAST Valid from HT2023"
+[cc-by-nc-sa-image]: <https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png>
 
-[1DL010]: <https://www.uu.se/en/study/course?query=1DL010> 
+[cc-by-nc-sa-shield]: <https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg>
 
-[1DT098]: <https://www.uu.se/en/study/course?query=1DT098> 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-[1MS041]: <https://www.uu.se/en/study/course?query=1MS041> 
+> Table of contents
+- [MAST-GITHUB-OVERLEAF-SYNC](#mast-github-overleaf-sync)
+	- [About](#about)
+	- [License](#license)
 
-[1RT747]: <https://www.uu.se/en/study/course?query=1RT747> 
+# MAST-GITHUB-OVERLEAF-SYNC
 
-[1TD069]: <https://www.uu.se/en/study/course?query=1TD069> 
+## About
 
-[1TD075]: <https://www.uu.se/en/study/course?query=1TD075> 
+## License
 
-[1TD184]: <https://www.uu.se/en/study/course?query=1TD184> 
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
-[1DL505]: <https://www.uu.se/en/study/course?query=1DL505> 
-
-Master's Programme in Data Science with a specialization in Machine Learning and Statistics
-
-| Course | Remaining::Total Credits | Task |
-| --- | --- | --- |
-| [1DL010] Artificial Intelligence | 3::7.5 | written exam |
-| [1DT098] Security and Privacy | 3.5::7.5 | written report |
-| [1MS041] Introduction to Data Science | 7.5::10 | written exam |
-| [1RT747] Reinforcement Learning | 3.5::7.5 | assignments `\|` oral exam |
-| [1TD069] Data Engineering I | 6.5::7.5 | assignments `\|` project |
-| [1TD075] Data Engineering II | 7.5::7.5 | assignments `\|` mini project `\|` seminar |
-| [1TD184] Optimization | 3::5 | written exam |
-| [1DL505] Project in Data Science | 5::7.5 | written report |
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
