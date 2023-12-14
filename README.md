@@ -11,6 +11,8 @@
 	- [About](#about)
 	- [License](#license)
 
+***
+
 # MAST-GITHUB-OVERLEAF-SYNC
 
 ## About
