@@ -1,0 +1,110 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cover-page-style}
+
+% fonts
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+
+% colors
+\usepackage{xcolor}
+\definecolor{FrameLightGray}{HTML}{E6E6E6}
+\definecolor{FrameSoftGray}{HTML}{B3B3B3}
+\definecolor{FrameDarkGray}{HTML}{808080}
+
+\usepackage{color}
+\usepackage{graphicx}
+
+\newif\iftitle
+\newif\ifsubtitle
+\newif\ifmarginaltext
+\newif\ifauthors
+\newif\ifcoursetitle
+\newif\ifdate
+\def\department{Department of Information Technology}
+%
+\def\title#1{\titletrue\def\thetitle{#1}}
+\def\subtitle#1{\subtitletrue\def\subtitle{#1}}
+\def\marginaltext#1{\marginaltexttrue\def\themarginaltext{#1}}
+\def\authors#1{\authorstrue\def\theauthors{#1}}
+\def\coursetitle#1{\coursetitletrue\def\thecoursetitle{#1}}
+
+\def\framsidebild#1{\framsidebildtrue\sigillfalse\def\theframsidebild{#1}}
+\def\rapportnummer#1{\rapportnummertrue\def\therapportnummer{#1}}
+\def\datum#1{\datumtrue\def\thedatum{#1}}
+\def\avdelning#1{\def\theavdelning{Inst f�r informationsteknologi, #1}}
+\def\avskiljare{ \rule{\textwidth}{1 pt}\smallskip}
+%
+
+\pagestyle{empty}
+\newlength{\FRAMsparaunit}
+\setlength{\FRAMsparaunit}{\unitlength}
+\setlength{\unitlength}{1 cm}
+\newlength{\FRAMsidbredd}
+\setlength{\FRAMsidbredd}{135 mm}
+\font\FRAMtitelfont=cmssdc28
+\font\FRAMundertitelfont=cmss20
+\font\FRAMmarginalfont=cmssdc40
+\font\FRAMnormalfont=cmss16
+\font\FRAMrapportnrfont=cmssbx16
+\font\FRAMinstfont=cmcsc12
+%
+\def\cover-page-style{
+\hspace{10 em}\hspace{-39 mm} % S� den ligger ungef�r lika vid 10,11 eller 12 pt
+\begin{picture}(0,0)
+  % Marginalen 
+  \put(-4.2,-26){\colorbox{FrameLightGray}{\makebox(4.7,32){}}}
+  % Obs sigillen skall ligga under b�rden, men �ver marginalen
+  \ifsigill{
+    \put(4.35,-23.3){%
+      \includegraphics[scale = 1]{UU_sigill_NV_gra}}
+    }
+  \else{
+    \put(-3.489,-23.3){%
+      \includegraphics[scale = 1]{UU_marginalsigill_5Svart}}
+    }\fi
+  % B�rden
+  \put(-3.7,-25.6){\colorbox{FrameSoftGray}{\makebox(21,2.2){}}}
+  \put(-4.2,-25.6){\colorbox{FrameDarkGray}{\makebox(4.7,2.2){}}}
+  % Loggan
+  \put(-3.4,0){\includegraphics[width = 42 mm]{UU_logo_pc_2f_42}}
+  
+  \put(1,-23.8){\parbox{1.1\FRAMsidbredd}{\centering%
+      {\FRAMinstfont \theavdelning}}}
+  \iftitel{\put(2,-3.5){\parbox{\FRAMsidbredd}{%
+        {\FRAMtitelfont \thetitel \bigskip\\}
+        \ifundertitel{
+          {\FRAMundertitelfont \theundertitel \\}
+          }\fi
+  % Dra streck om n�got mer
+        \ifforfattare{\avskiljare}
+        \else{
+          \ifrapportnummer{\avskiljare}
+          \else{
+            \ifdatum{\avskiljare
+              }\fi
+            }\fi
+          }\fi
+
+        \ifforfattare{
+          {\FRAMnormalfont \theforfattare\medskip \\}
+          }\fi
+        \ifrapportnummer{
+          {\FRAMrapportnrfont \therapportnummer\smallskip \\}
+          }\fi
+        \ifdatum{
+          {\FRAMnormalfont~\\ \thedatum \smallskip\\}
+          }\fi
+        }}
+    }\fi
+  \ifmarginaltext{
+    \put(-1.85,-19){\rotatebox{90}{% 
+        \textcolor{FrameSoftGray}{\FRAMmarginalfont \themarginaltext}}}
+    }\fi 
+  \ifframsidebild{
+    \put(2,-22.3){\parbox[b]{\FRAMsidbredd}{\centering \theframsidebild}}
+    }\fi
+\end{picture}
+\cleardoublepage
+\setlength{\unitlength}{\FRAMsparaunit}
+\pagestyle{plain}
+}
