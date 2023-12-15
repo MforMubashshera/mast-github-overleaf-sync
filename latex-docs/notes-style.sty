@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{note-style}
+\ProvidesPackage{notes-style}
 
 % fonts
 \renewcommand{\rmdefault}{cmr}
@@ -7,30 +7,21 @@
 
 % colors
 \usepackage{xcolor}
-\definecolor{PageColor}{HTML}{F0F0F0}
-\definecolor{FontColor}{HTML}{282828}
+\definecolor{UUred}{HTML}{990000}
+\definecolor{UUlightgrey}{HTML}{E6E6E6}
+\definecolor{UUmediumgrey}{HTML}{BEBEBE}
+\definecolor{UUdarkergrey}{HTML}{828282}
 
 % set page geometry
-\usepackage[verbose=true,a4paper]{geometry}
+\usepackage[verbose=true, a4paper]{geometry}
 \AtBeginDocument{
   \newgeometry{
-    left=1in,
-    top=1in,
     textheight=9in,
-    textwidth=7in,    
+    textwidth=5.8in,    
     headheight=12pt,
     headsep=12pt
   }
 }
-
-\usepackage{lastpage}
-\usepackage[myheadings]{fancyhdr}
-\pagestyle{fancy}
-
-% clear existing header/footer entries
-\fancyhf{} 
-\fancyhead[R]{\emph{Page \thepage::\pageref{LastPage}}}
-
 % https://www.overleaf.com/learn/latex/Hyperlinks
 \usepackage{hyperref}
 \hypersetup{
@@ -39,8 +30,16 @@
     urlcolor=teal
 }
 
+\usepackage{lastpage}
+\usepackage[myheadings]{fancyhdr}
+\pagestyle{fancy}
+% clear existing header/footer entries
+\fancyhf{} 
+\fancyhead[R]{\emph{page \thepage::\pageref{LastPage}}}
+
+\usepackage{parskip}
 % line number
-\RequirePackage{lineno}
+\RequirePackage[modulo, mathlines]{lineno}
 \linenumbers
 
 % fix incompatibilities between lineno and amsmath, 
